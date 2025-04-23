@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header h1 {
+    display: inline-block;
+}
+
+.header nav {
+    float: right;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #FFF0D1;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.search-section h2 {
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #444;
+}
+
+/* Job Listings */
+.job-listings {
+    padding: 50px 0;
+}
+
+.job-listing {
+    background-color: #FEF9D9;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing h3 {
+    margin-bottom: 10px;
+}
+
+.job-listing button {   
+    background-color: #8EACCD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.job-listing button:hover {
+    background-color: #8ecd8f;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header nav {
+        float: none;
+        text-align: center;
+    }
+
+    .header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form input, .search-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .job-listing {
+        text-align: center;
+    }
+
+    .job-listing button {
+        width: 100%;
+    }
+}
